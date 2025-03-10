@@ -298,8 +298,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     ); // Show pagination & footer at the end
                   }
                   return isProductSelected
-                      ? ProductTile(product: products[index])
-                      : VoucherTile(voucher: vouchers[index]);
+                      ? Center(child: Text("no data"))
+                      : Center(child: Text("no text"));
                 },
               ),
             ),
